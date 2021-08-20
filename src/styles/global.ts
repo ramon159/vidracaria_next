@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { FONT } from 'config/general'
+import { FONT, SIZE } from 'config/general'
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -10,17 +10,18 @@ export const GlobalStyles = createGlobalStyle`
       line-height: 1.5;
   }
 
+  html {
+      scroll-behavior: smooth;
+  }
+
   html, body, #root, .App {
       height: 100%;
       box-sizing: border-box;
   }
 
-  html {
-      scroll-behavior: smooth;
-  }
-
   body{
       font-family: ${FONT.body};
+      font-size: ${SIZE.normal};
   }
 
   a {
@@ -34,5 +35,10 @@ export const GlobalStyles = createGlobalStyle`
 
   button {
       cursor: pointer;
+  }
+
+  button, input {
+      border: none;
+      font-family: ${FONT.body};
   }
 `
