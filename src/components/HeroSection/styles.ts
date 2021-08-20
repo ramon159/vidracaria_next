@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 // import { Button } from '@material-ui/core'
 import { COLOR, FONT, SIZE } from 'config/general'
 import {
@@ -7,6 +7,10 @@ import {
   RiPhoneFill as RiPhone
 } from 'react-icons/ri'
 
+const sharedShadow = css`
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+`
 export const Section = styled.section`
   height: 100vh;
 `
@@ -46,10 +50,12 @@ export const HeroText = styled.div`
     font-weight: 700;
     font-size: 2.5em;
     margin: 0.67em 0;
+    ${sharedShadow}
   }
   p {
     color: ${COLOR.white};
     font-weight: 700;
+    ${sharedShadow}
   }
 `
 
@@ -80,6 +86,7 @@ export const StyledButton = styled.button`
   width: 50%;
   transition: 0.1s;
   height: 40px;
+  ${sharedShadow}
   &:hover {
     background-color: ${COLOR.secondaryLight};
   }
@@ -95,12 +102,15 @@ export const IconWrapper = styled.div`
 export const WhatsappIcon = styled(RiWhatsapp)`
   cursor: pointer;
   font-size: ${SIZE.p32}px;
+  ${sharedShadow}
 `
 export const InstagramIcon = styled(RiInstagram)`
   font-size: ${SIZE.p32}px;
   cursor: pointer;
+  ${sharedShadow}
 `
 export const PhoneIcon = styled(RiPhone)`
   font-size: ${SIZE.p32}px;
   cursor: pointer;
+  ${sharedShadow}
 `
