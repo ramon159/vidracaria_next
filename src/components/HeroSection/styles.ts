@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-// import { Button } from '@material-ui/core'
 import { COLOR, FONT, SIZE } from 'config/general'
 import {
   RiInstagramFill as RiInstagram,
@@ -10,6 +9,11 @@ import {
 const sharedShadow = css`
   -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+`
+const sharedIcon = css`
+  font-size: ${SIZE.p24}px;
+  cursor: pointer;
+  color: ${COLOR.white};
 `
 export const Section = styled.section`
   height: 100vh;
@@ -55,28 +59,18 @@ export const HeroText = styled.div`
   p {
     color: ${COLOR.white};
     font-weight: 700;
+
     ${sharedShadow}
   }
 `
 
-// export const StyledLink = styled(Link)`
-//   margin: auto;
-//   margin-top: 30px;
-//   padding: 5px 5px;
-//   background-color: #fa5f5f;
-//   color: white;
-//   /* border-radius: 15px; */
-//   width: 50%;
-//   transition: 0.1s;
-
-//   &:hover {
-//     background-color: #d64f4f;
-//   }
-// `;
+export const StyledLink = styled.a`
+  color: ${COLOR.white};
+`
 
 export const StyledButton = styled.button`
   margin: auto;
-  margin-top: 30px;
+  margin-top: 70px;
   padding: 5px 5px;
   background-color: ${COLOR.secondary};
   color: white;
@@ -96,21 +90,23 @@ export const IconWrapper = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 60px;
-  gap: 7vw;
+  top: 70px;
+  gap: 60px;
+
+  @media (min-width: 768px) {
+  } ;
 `
+
+// ICONS
 export const WhatsappIcon = styled(RiWhatsapp)`
-  cursor: pointer;
-  font-size: ${SIZE.p32}px;
+  ${sharedIcon}
   ${sharedShadow}
 `
 export const InstagramIcon = styled(RiInstagram)`
-  font-size: ${SIZE.p32}px;
-  cursor: pointer;
   ${sharedShadow}
+  ${sharedIcon}
 `
 export const PhoneIcon = styled(RiPhone)`
-  font-size: ${SIZE.p32}px;
-  cursor: pointer;
   ${sharedShadow}
+  ${sharedIcon}
 `

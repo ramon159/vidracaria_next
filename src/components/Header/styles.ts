@@ -21,7 +21,7 @@ export const Nav = styled.nav`
   margin: 0 1rem;
 
   @media (min-width: 768px) {
-    height: calc(${SIZE.headerHeight} + 1.5rem);
+    height: calc(${SIZE.headerHeight} + 1rem);
   }
 `
 

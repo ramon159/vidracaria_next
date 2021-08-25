@@ -7,23 +7,40 @@ export const CardContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 30px;
+  margin-top: 1rem;
 
   @media (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
   }
 `
+
+export const Section = styled.div`
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  h2 {
+    font-size: 1.7em;
+    margin: 2rem 0;
+  } */
+`
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
   height: 300px;
   width: 300px;
-  background-color: white;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
   img {
   }
-  h3 {
-    ${FONT.poppins}
-    color: ${COLOR.primary}
+  p {
+    ${FONT.poppins};
+    color: ${COLOR.primary};
+    text-align: left;
+    margin-left: 5px;
   }
 `
