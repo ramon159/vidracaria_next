@@ -9,7 +9,6 @@ function App({ Component, pageProps }: AppProps) {
         <title>Vidraçaria Central</title>
         <link rel="shortcut icon" href="/img/logo.svg" />
         <link rel="apple-touch-icon" href="/img/logo.svg" />
-        {/* <link rel="manifest" href="/manifest.json" /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
