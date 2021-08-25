@@ -3,7 +3,8 @@ import { COLOR, FONT, SIZE } from 'config/general'
 import {
   RiInstagramFill as RiInstagram,
   RiWhatsappFill as RiWhatsapp,
-  RiPhoneFill as RiPhone
+  RiPhoneFill as RiPhone,
+  RiFacebookFill as RiFacebook
 } from 'react-icons/ri'
 
 const sharedShadow = css`
@@ -107,6 +108,10 @@ export const InstagramIcon = styled(RiInstagram)`
   ${sharedIcon}
 `
 export const PhoneIcon = styled(RiPhone)`
+  ${sharedShadow}
+  ${sharedIcon}
+`
+export const FacebookIcon = styled(RiFacebook)`
   ${sharedShadow}
   ${sharedIcon}
 `
