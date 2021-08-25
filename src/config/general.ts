@@ -67,7 +67,7 @@ export const SIZE: ISizesProps = {
   h1: '1.5rem',
   h2: '1.25rem',
   h3: '1rem',
-  headerHeight: '3rem',
+  headerHeight: '3.5rem',
   smaller: '.75rem',
   small: '.813rem',
   normal: '.938rem',
