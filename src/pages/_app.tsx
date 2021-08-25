@@ -7,13 +7,13 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Vidraçaria Central</title>
-        <link rel="shortcut icon" href="/images/icon.png" />
-        <link rel="apple-touch-icon" href="/img/icon.png" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="shortcut icon" href="/img/logo.svg" />
+        <link rel="apple-touch-icon" href="/img/logo.svg" />
+        {/* <link rel="manifest" href="/manifest.json" /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Janelas, Portas, Box ,Guarda corpo, Kit pia, Espelhos bisotados"
+          content="Janelas, Portas, Box, Guarda corpo, Kit pia e Espelhos bisotados"
         />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
