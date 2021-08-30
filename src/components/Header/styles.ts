@@ -97,9 +97,11 @@ export const Bars = styled(FaBars)`
   color: ${COLOR.black};
 `
 export const Cart = styled(CartIcon)`
-  color: ${COLOR.black};
+  color: ${COLOR.white};
   font-size: 1.5rem;
   cursor: pointer;
+
+  /* temporary */
 `
 // navItems
 
