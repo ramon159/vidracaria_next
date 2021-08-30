@@ -1,4 +1,5 @@
 export interface IColorsProps {
+  wpp: string
   primary: string
   secondary: string
   secondaryLight: string
@@ -16,6 +17,7 @@ export interface IColorsProps {
 }
 
 export const COLOR: IColorsProps = {
+  wpp: '#01e675',
   primary: 'hsl(190, 64%, 22%)',
   secondary: '#F24236',
   secondaryLight: 'hsl(4, 88%, 63%)',
