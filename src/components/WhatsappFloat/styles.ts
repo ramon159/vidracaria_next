@@ -1,33 +1,29 @@
+import { COLOR } from 'config/general'
 import styled from 'styled-components'
-// import { Button } from '@material-ui/core'
-import { COLOR, SIZE } from 'config/general'
-import { RiWhatsappFill as RiWhatsapp } from 'react-icons/ri'
+import { FaWhatsapp } from 'react-icons/fa'
 
-// new
+export const WhatsappIcon = styled(FaWhatsapp)`
+  margin-top: 16px;
+`
 
-export const WhatsappIcon = styled(RiWhatsapp)`
+export const StyledLink = styled.a`
+  z-index: 100;
+  position: fixed;
   width: 60px;
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: black;
-  color: #fff;
-  border-radius: 50px;
-  font-size: 30px;
 
-  font-size: ${SIZE.p24}px;
-  cursor: pointer;
+  background-color: ${COLOR.wpp};
   color: ${COLOR.white};
-  /* sombra */
-  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-  /* box-shadow: 2px 2px 3px #999; */
-`
-export const WhatsAppWrapper = styled.div`
-  position: fixed;
+
+  border-radius: 50px;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #222;
+  p {
+    position: fixed;
+    right: -100%;
+    color: ${COLOR.black};
+  }
 `
