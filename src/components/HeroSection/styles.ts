@@ -34,6 +34,9 @@ export const HeroImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
   position: relative;
   background-attachment: fixed;
 
@@ -67,20 +70,30 @@ export const HeroText = styled.div`
 
 export const StyledLink = styled.a`
   color: ${COLOR.white};
+  p {
+    color: ${COLOR.black};
+    position: fixed;
+    right: -100%;
+    z-index: 10;
+    font-size: 24px;
+  }
 `
 
 export const StyledButton = styled.button`
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: ${COLOR.white};
+  background-color: ${COLOR.secondary};
+
   margin: auto;
   margin-top: 70px;
   padding: 5px 5px;
-  background-color: ${COLOR.secondary};
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
   border-radius: 3px;
+
   width: 50%;
-  transition: 0.1s;
   height: 40px;
+  transition: 0.1s;
   ${sharedShadow}
   &:hover {
     background-color: ${COLOR.secondaryLight};
