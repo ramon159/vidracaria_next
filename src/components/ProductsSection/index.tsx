@@ -1,15 +1,15 @@
-import Section from '../Section'
 import * as S from './styles'
 import Image from 'next/image'
-import SwiperCore, { Keyboard, Navigation, Pagination } from 'swiper/core'
+import Link from 'next/link'
+import wppAPI from 'services/WppAPI'
+import SwiperCore, { Keyboard, Navigation } from 'swiper/core'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import 'swiper/swiper.min.css'
 import 'swiper/components/navigation/navigation.min.css'
-import 'swiper/components/pagination/pagination.min.css'
 
-SwiperCore.use([Keyboard, Navigation, Pagination])
+SwiperCore.use([Keyboard, Navigation])
 
 const imageItems = [
   {
@@ -70,24 +70,32 @@ const settings = {
 
 function index() {
   return (
-    <Section id="products">
+    <S.Section id="products">
       <h2>Produtos</h2>
       <Swiper {...settings}>
         {imageItems.map((i) => (
           <SwiperSlide key={i.title}>
             <S.Card>
+              <p>{i.title}</p>
               <Image
                 width="300"
                 height="300"
                 src={i.img}
                 alt={'img/' + i.title}
               />
-              <p>{i.title}</p>
+              <Link href={wppAPI('Olá, gostaria de orçar ')}>
+                <S.CardButton>
+                  Pedir Orçamento
+                  <span>
+                    <S.WppIcon />
+                  </span>
+                </S.CardButton>
+              </Link>
             </S.Card>
           </SwiperSlide>
         ))}
       </Swiper>
-    </Section>
+    </S.Section>
   )
 }
 
