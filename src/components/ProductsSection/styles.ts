@@ -12,7 +12,7 @@ export const Section = styled.div`
 
   h2 {
     font-size: 1.7em;
-    margin: 2rem 0 4rem;
+    margin: 2rem 0 3.5rem;
   }
 `
 
