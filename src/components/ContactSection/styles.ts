@@ -48,8 +48,8 @@ export const ListItem = styled.li`
     cursor: pointer;
 
     p {
-      color: ${COLOR.black};
-      font-size: ${SIZE.p18}px;
+      color: #444;
+      font-size: 12px;
     }
   }
 `
