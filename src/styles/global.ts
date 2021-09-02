@@ -66,10 +66,15 @@ export const GlobalStyles = createGlobalStyle`
   height: 100%;
   object-fit: cover;
 }
-.swiper-button-prev, .swiper-button-next{
+
+  @media (min-width: 768px) {
+  .swiper-button-prev, .swiper-button-next{
   background-color: ${COLOR.tertiary};
   padding: 30px;
   color: ${COLOR.white};
+
+  }
+
 }
 
 
