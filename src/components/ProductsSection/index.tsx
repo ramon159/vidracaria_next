@@ -83,7 +83,11 @@ function index() {
                 src={i.img}
                 alt={'img/' + i.title}
               />
-              <Link href={wppAPI('Olá, gostaria de orçar ')}>
+              <Link
+                href={wppAPI(
+                  `Olá, gostaria de fazer um orçamento de ${i.title}`
+                )}
+              >
                 <S.CardButton>
                   Pedir Orçamento
                   <span>
