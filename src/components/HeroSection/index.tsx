@@ -1,13 +1,13 @@
 import * as S from './styles'
 import Link from 'next/link'
-import wppAPI from 'services/WppAPI'
+// import wppAPI from 'services/WppAPI'
 
-const links = {
-  phone: 'tel:+5502127012327',
-  // instagram: '#',
-  whatsapp: wppAPI(),
-  facebook: 'https://www.facebook.com/vidracariacentralrj'
-}
+// const links = {
+//   phone: 'tel:+5502127012327',
+//   // instagram: '#',
+//   whatsapp: wppAPI(),
+//   facebook: 'https://www.facebook.com/vidracariacentralrj'
+// }
 
 function HeroSection() {
   return (
@@ -19,7 +19,7 @@ function HeroSection() {
           <Link href="#products">
             <S.StyledButton>Produtos</S.StyledButton>
           </Link>
-          <S.IconWrapper>
+          {/* <S.IconWrapper>
             <Link href={links.phone} passHref={true}>
               <S.StyledLink rel="noreferrer">
                 <S.PhoneIcon />
@@ -40,7 +40,7 @@ function HeroSection() {
                 <p>facebook</p>
               </S.StyledLink>
             </Link>
-          </S.IconWrapper>
+          </S.IconWrapper> */}
         </S.HeroText>
       </S.HeroImage>
     </S.Section>
