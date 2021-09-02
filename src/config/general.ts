@@ -14,9 +14,11 @@ export interface IColorsProps {
   black: string
   scrollBarColor: string
   ScrollThumbColor: string
+  fb: string
 }
 
 export const COLOR: IColorsProps = {
+  fb: '#3b5998',
   wpp: '#01e675',
   primary: 'hsl(190, 64%, 22%)',
   secondary: '#F24236',
