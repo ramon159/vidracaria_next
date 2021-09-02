@@ -6,7 +6,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Vidraçaria Central</title>
+        <title>Vidraçaria Central | São Gonçalo, RJ</title>
         <link rel="shortcut icon" href="/img/logo.svg" />
         <link rel="apple-touch-icon" href="/img/logo.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
