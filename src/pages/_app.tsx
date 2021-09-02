@@ -7,6 +7,11 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Vidraçaria Central | São Gonçalo, RJ</title>
+        <meta
+          name="google-site-verification"
+          content="pKGiZ7Z0r3tfA44GzmG0ae9HaEY2AwkxgpbhVnnPFQA"
+        />
+
         <link rel="shortcut icon" href="/img/logo.svg" />
         <link rel="apple-touch-icon" href="/img/logo.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
