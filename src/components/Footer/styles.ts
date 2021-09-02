@@ -12,6 +12,8 @@ export const Footer = styled.footer`
   color: ${COLOR.white};
   background-color: ${COLOR.primary};
 
+  padding: 0 1rem;
+
   p {
     white-space: pre;
     font-size: 12px;
