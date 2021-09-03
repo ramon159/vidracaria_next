@@ -1,21 +1,11 @@
 import styled, { css } from 'styled-components'
 import { COLOR, FONT, SIZE } from 'config/general'
-import {
-  RiInstagramFill as RiInstagram,
-  RiWhatsappFill as RiWhatsapp,
-  RiPhoneFill as RiPhone,
-  RiFacebookFill as RiFacebook
-} from 'react-icons/ri'
 
 const sharedShadow = css`
   -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
 `
-const sharedIcon = css`
-  font-size: ${SIZE.p24}px;
-  cursor: pointer;
-  color: ${COLOR.white};
-`
+
 export const Section = styled.section`
   height: 100vh;
 `
@@ -108,22 +98,4 @@ export const IconWrapper = styled.div`
 
   @media (min-width: 768px) {
   } ;
-`
-
-// ICONS
-export const WhatsappIcon = styled(RiWhatsapp)`
-  ${sharedIcon}
-  ${sharedShadow}
-`
-export const InstagramIcon = styled(RiInstagram)`
-  ${sharedShadow}
-  ${sharedIcon}
-`
-export const PhoneIcon = styled(RiPhone)`
-  ${sharedShadow}
-  ${sharedIcon}
-`
-export const FacebookIcon = styled(RiFacebook)`
-  ${sharedShadow}
-  ${sharedIcon}
 `
