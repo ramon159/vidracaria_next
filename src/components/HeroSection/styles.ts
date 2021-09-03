@@ -1,10 +1,5 @@
-import styled, { css } from 'styled-components'
-import { COLOR, FONT, SIZE } from 'config/general'
-
-const sharedShadow = css`
-  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-`
+import styled from 'styled-components'
+import { COLOR, FONT } from 'config/general'
 
 export const Section = styled.section`
   height: 100vh;
@@ -47,13 +42,10 @@ export const HeroText = styled.div`
     font-weight: 700;
     font-size: 2.5em;
     margin: 0.67em 0;
-    ${sharedShadow}
   }
   p {
     color: ${COLOR.white};
     font-weight: 700;
-
-    ${sharedShadow}
   }
 `
 
@@ -83,7 +75,6 @@ export const StyledButton = styled.button`
   width: 50%;
   height: 40px;
   transition: 0.1s;
-  ${sharedShadow}
   &:hover {
     background-color: ${COLOR.secondaryLight};
   }
