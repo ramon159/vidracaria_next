@@ -76,6 +76,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
 }
-
+  .negativeindex{
+    z-index: -1;
+  }
 
 `

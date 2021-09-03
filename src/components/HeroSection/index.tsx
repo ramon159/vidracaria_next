@@ -1,5 +1,33 @@
 import * as S from './styles'
 import Link from 'next/link'
+import Image from 'next/image'
+
+function HeroSection() {
+  return (
+    <S.Section>
+      <S.HeroImage>
+        <Image
+          layout={'fill'}
+          objectFit={'cover'}
+          src={'/img/hero-image.jpg'}
+          alt={'hero-image'}
+          className="negativeindex"
+        />
+
+        <S.HeroText>
+          <h1>Vidraçaria Central</h1>
+          <p>Os melhores produtos e serviços à sua disposição</p>
+          <Link href="#products">
+            <S.StyledButton>Produtos</S.StyledButton>
+          </Link>
+        </S.HeroText>
+      </S.HeroImage>
+    </S.Section>
+  )
+}
+
+export default HeroSection
+
 // import wppAPI from 'services/WppAPI'
 
 // const links = {
@@ -8,18 +36,8 @@ import Link from 'next/link'
 //   whatsapp: wppAPI(),
 //   facebook: 'https://www.facebook.com/vidracariacentralrj'
 // }
-
-function HeroSection() {
-  return (
-    <S.Section>
-      <S.HeroImage>
-        <S.HeroText>
-          <h1>Vidraçaria Central</h1>
-          <p>Os melhores produtos e serviços à sua disposição</p>
-          <Link href="#products">
-            <S.StyledButton>Produtos</S.StyledButton>
-          </Link>
-          {/* <S.IconWrapper>
+{
+  /* <S.IconWrapper>
             <Link href={links.phone} passHref={true}>
               <S.StyledLink rel="noreferrer">
                 <S.PhoneIcon />
@@ -40,11 +58,5 @@ function HeroSection() {
                 <p>facebook</p>
               </S.StyledLink>
             </Link>
-          </S.IconWrapper> */}
-        </S.HeroText>
-      </S.HeroImage>
-    </S.Section>
-  )
+          </S.IconWrapper> */
 }
-
-export default HeroSection
