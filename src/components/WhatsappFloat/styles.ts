@@ -2,17 +2,19 @@ import { COLOR } from 'config/general'
 import styled from 'styled-components'
 import { FaWhatsapp } from 'react-icons/fa'
 
-export const WhatsappIcon = styled(FaWhatsapp)`
-  margin-top: 16px;
-`
+export const WhatsappIcon = styled(FaWhatsapp)``
 
 export const StyledLink = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 100;
   position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
+  width: 3rem;
+  height: 3rem;
+
+  bottom: 3rem;
+  right: 2rem;
 
   background-color: ${COLOR.wpp};
   color: ${COLOR.white};
