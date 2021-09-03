@@ -77,12 +77,7 @@ function index() {
           <SwiperSlide key={i.title}>
             <S.Card>
               <p>{i.title}</p>
-              <Image
-                width="300"
-                height="300"
-                src={i.img}
-                alt={'img/' + i.title}
-              />
+              <Image width="300" height="300" src={i.img} alt={i.title} />
               <Link
                 href={wppAPI(
                   `Olá, gostaria de fazer um orçamento de ${i.title}`
