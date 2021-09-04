@@ -3,6 +3,10 @@ import { COLOR, FONT } from 'config/general'
 
 export const Section = styled.section`
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 export const HeroImage = styled.div`
@@ -20,7 +24,7 @@ export const BackgroundShadow = styled.div`
   //paralax
 
   //paralax
-  height: 100vh;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   position: absolute;
@@ -29,12 +33,12 @@ export const BackgroundShadow = styled.div`
 
 export const HeroText = styled.div`
   display: flex;
-  z-index: 2;
-  color: ${COLOR.white};
-  display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
+
+  z-index: 3;
+  color: ${COLOR.white};
   font-size: 1.3rem;
   h1 {
     color: ${COLOR.tertiary};
