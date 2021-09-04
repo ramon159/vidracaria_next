@@ -5,7 +5,7 @@ import Image from 'next/image'
 function HeroSection() {
   return (
     <S.Section>
-      <S.BackgroundShadow />
+      <S.BackgroundGradient />
       <S.HeroImage>
         <Image
           layout={'fill'}

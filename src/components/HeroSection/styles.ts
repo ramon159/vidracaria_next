@@ -12,7 +12,7 @@ export const Section = styled.section`
 export const HeroImage = styled.div`
   z-index: -1;
 `
-export const BackgroundShadow = styled.div`
+export const BackgroundGradient = styled.div`
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.5),
