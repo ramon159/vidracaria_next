@@ -28,36 +28,3 @@ function HeroSection() {
 }
 
 export default HeroSection
-
-// import wppAPI from 'services/WppAPI'
-
-// const links = {
-//   phone: 'tel:+5502127012327',
-//   // instagram: '#',
-//   whatsapp: wppAPI(),
-//   facebook: 'https://www.facebook.com/vidracariacentralrj'
-// }
-{
-  /* <S.IconWrapper>
-            <Link href={links.phone} passHref={true}>
-              <S.StyledLink rel="noreferrer">
-                <S.PhoneIcon />
-                <p>telefone</p>
-              </S.StyledLink>
-            </Link>
-
-            <Link href={links.whatsapp} passHref={true}>
-              <S.StyledLink target="_blank" rel="noreferrer">
-                <S.WhatsappIcon />
-                <p>whatsapp</p>
-              </S.StyledLink>
-            </Link>
-
-            <Link href={links.facebook} passHref={true}>
-              <S.StyledLink target="_blank" rel="noreferrer">
-                <S.FacebookIcon />
-                <p>facebook</p>
-              </S.StyledLink>
-            </Link>
-          </S.IconWrapper> */
-}
