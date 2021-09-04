@@ -6,6 +6,9 @@ export const Section = styled.section`
 `
 
 export const HeroImage = styled.div`
+  z-index: -1;
+`
+export const BackgroundShadow = styled.div`
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.5),
@@ -14,28 +17,25 @@ export const HeroImage = styled.div`
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.5)
   );
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  position: relative;
-  background-attachment: fixed;
+  //paralax
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  //paralax
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
 `
 
 export const HeroText = styled.div`
+  display: flex;
+  z-index: 2;
   color: ${COLOR.white};
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.3rem;
   h1 {
     color: ${COLOR.tertiary};
     font-family: ${FONT.heroTitle};
@@ -68,7 +68,7 @@ export const StyledButton = styled.button`
   background-color: ${COLOR.secondary};
 
   margin: auto;
-  margin-top: 70px;
+  margin-top: 2rem;
   padding: 5px 5px;
   border-radius: 3px;
 
@@ -78,15 +78,4 @@ export const StyledButton = styled.button`
   &:hover {
     background-color: ${COLOR.secondaryLight};
   }
-`
-export const IconWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 70px;
-  gap: 60px;
-
-  @media (min-width: 768px) {
-  } ;
 `

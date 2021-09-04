@@ -46,8 +46,8 @@ export const NavMenu = styled.div<INavMenuProps>`
     background-color: ${COLOR.body};
     top: 0;
     right: ${(props) => (props.isOpen ? '0' : '-100%')};
-    width: 60vw;
-    height: 100%;
+    width: 75vw;
+    height: 200%;
     box-shadow: -1px 0 4px hsla(190, 64%, 15%, 0.15);
     padding: 3rem;
     transition: 0.4s;

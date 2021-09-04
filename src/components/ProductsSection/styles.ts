@@ -3,16 +3,15 @@ import { COLOR, FONT, SIZE } from 'config/general'
 import { RiWhatsappFill as RiWhatsapp } from 'react-icons/ri'
 
 export const Section = styled.div`
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: 1rem;
+  /* padding: 1rem; */
 
   h2 {
     font-size: 1.7em;
-    margin: 2rem 0 3.5rem;
+    margin: 1rem;
   }
 `
 

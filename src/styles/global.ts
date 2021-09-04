@@ -67,6 +67,10 @@ export const GlobalStyles = createGlobalStyle`
   object-fit: cover;
 }
 
+
+  .swiper-button-prev, .swiper-button-next{
+    padding: 20px;
+  }
   @media (min-width: 768px) {
   .swiper-button-prev, .swiper-button-next{
   background-color: ${COLOR.tertiary};
@@ -76,8 +80,5 @@ export const GlobalStyles = createGlobalStyle`
   }
 
 }
-  .negativeindex{
-    z-index: -1;
-  }
 
 `
