@@ -21,14 +21,13 @@ export const BackgroundShadow = styled.div`
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.5)
   );
-  //paralax
 
-  //paralax
   height: 100%;
   width: 100%;
   object-fit: cover;
   position: absolute;
   z-index: 1;
+  bottom: 0;
 `
 
 export const HeroText = styled.div`
