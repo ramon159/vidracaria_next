@@ -13,6 +13,10 @@ SwiperCore.use([Keyboard, Navigation])
 
 const imageItems = [
   {
+    img: '/img/vidro_temperado.jpg',
+    title: 'vidros temperados'
+  },
+  {
     img: '/img/janelas.jpg',
     title: 'janelas'
   },
